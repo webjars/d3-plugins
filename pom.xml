@@ -11,7 +11,7 @@
     <packaging>jar</packaging>
     <groupId>org.webjars</groupId>
     <artifactId>d3-plugins</artifactId>
-    <version>1.0-SNAPSHOT</version>
+    <version>da342b6-SNAPSHOT</version>
     <name>d3-plugins</name>
     <description>WebJar for d3-plugins</description>
     <url>http://webjars.org</url>
@@ -49,8 +49,8 @@
     
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <upstream.version>a3c809c322</upstream.version>
-        <upstream.commit>a3c809c32282be9980f24a1c7a08f7be6a3460c7</upstream.commit>
+        <upstream.version>da342b6</upstream.version>
+        <upstream.commit>da342b67eb0b790a8ebde02aae0e1621c0ffb4d6</upstream.commit>
         <upstream.url>https://github.com/d3/d3-plugins/archive</upstream.url>
         <destDir>${project.build.outputDirectory}/META-INF/resources/webjars/${project.artifactId}/${upstream.version}</destDir>
     </properties>
@@ -102,6 +102,12 @@
                 <version>2.3.2</version>
             </plugin>
         </plugins>
+        <resources>
+            <resource>
+                <directory>${project.basedir}/src/main/resources</directory>
+                <targetPath>${destDir}</targetPath>
+            </resource>
+        </resources>
     </build>
 
 </project>
